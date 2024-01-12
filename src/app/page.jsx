@@ -2,6 +2,7 @@ import Header from "./components/Header"
 import ComponentSection from "./components/ComponentSection"
 import Button from "./components/Button"
 import ButtonOutline from "./components/ButtonOutline"
+import ButtonGhost from "./components/ButtonGhost"
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName={"ButtonOutline"}>
           <ButtonOutline text={"Outline"} />
+        </ComponentSection>
+        <ComponentSection componentName={"ButtonGhost"}>
+          <ButtonGhost text={"Ghost"} />
         </ComponentSection>
       </main>
     </>
