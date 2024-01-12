@@ -2,7 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos do tema claro e escuro */
+/**
+ * @license
+ *
+ * Font Family: Bespoke Sans
+ * Designed by: Jérémie Hornus, Théo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
+ * URL: https://www.fontshare.com/fonts/bespoke-sans
+ * © 2023 Indian Type Foundry
+ *
+ * Font Styles:
+ * Bespoke Sans Variable(Variable font)
+ *
+*/
+@font-face {
+  font-family: BespokeSans-Variable;
+  src: url(../../public/fonts/BespokeSans-Variable-11152b47.woff2)
+    format("woff2");
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* @license
+*
+* Font Family: Bespoke Stencil
+* Designed by: Jérémie Hornus, Théo Guillard, Morgane Pambrun, Alisa Nowak, Joachim Vu
+* URL: https://www.fontshare.com/fonts/bespoke-stencil
+* © 2023 Indian Type Foundry
+*
+* Font Styles:
+* Bespoke Stencil Variable(Variable font)
+*
+*/
+@font-face {
+  font-family: BespokeStencil-Variable;
+  src: url(../../public/fonts/BespokeStencil-Variable-c2fecad4.woff2)
+    format("woff2");
+  font-weight: 300 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* h1 */
+h1 {
+  font-family: BespokeStencil-Variable;
+}
+
+h1 span {
+  font-family: BespokeSans-Variable;
+}
+
+/* themes */
 .dark body {
   background-color: #09090b;
 }
@@ -19,6 +70,7 @@ body {
   color: #09090b;
 }
 
+/* code */
 html pre[class*="language-"] {
   margin: 0 !important;
   background-color: #09090b;

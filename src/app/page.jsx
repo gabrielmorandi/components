@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="grid w-full gap-12 pb-10 mt-14 place-items-center">
+      <main className="grid w-full gap-12 pb-10 mt-4 place-items-center sm:mt-6">
         <ComponentSection componentName={"Button"}>
           <Button text={"Button"} />
         </ComponentSection>
