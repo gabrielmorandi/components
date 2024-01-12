@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos do tema claro e escuro */
+.dark body {
+  background-color: #09090b;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.dark * {
+  color: #ffffff;
+}
+
+* {
+  color: #09090b;
+}
+
+html pre[class*="language-"] {
+  margin: 0 !important;
+  background-color: #09090b;
+}
+
+html pre[class*="language-"] * {
+  margin: 0 !important;
+  color: #ffffff;
+}
+
+.token {
+  color: #8c8c8d !important;
+}
+
+.token.function {
+  color: #ffffff !important;
+}
+
+.token.parameter {
+  color: #ffffff !important;
+}
