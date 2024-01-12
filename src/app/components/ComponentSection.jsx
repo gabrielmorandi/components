@@ -36,7 +36,7 @@ export default function ComponentSection({ children, componentName }) {
         <h2 className="text-3xl font-black tracking-tighter">
           {componentName}
         </h2>
-        <div class="flex items-center border-b border-b-zinc-200 dark:border-b-zinc-800">
+        <div className="flex items-center border-b border-b-zinc-200 dark:border-b-zinc-800">
           <button
             onClick={() => setActiveTab("preview")}
             className={
