@@ -18,10 +18,13 @@ export default function ButtonBlendOld({ text }) {
   useEffect(() => {
     const currentButtonRef = buttonRef.current
     if (currentButtonRef) {
+      // Adding a mousemove event listener to the button
       currentButtonRef.addEventListener("mousemove", mouseMoveEvent)
     }
+
     return () => {
       if (currentButtonRef) {
+        // Removing the event listener when the component unmounts
         currentButtonRef.removeEventListener("mousemove", mouseMoveEvent)
       }
     }
@@ -30,12 +33,14 @@ export default function ButtonBlendOld({ text }) {
   return (
     <button
       ref={buttonRef}
-      className="relative px-6 py-2 bg-transparent rounded-full overflow-hidden [&>p]:hover:text-white dark:[&>p]:hover:text-zinc-950 after:content-[''] after:absolute after:w-10 after:h-10 after:rounded-full after:bg-zinc-900 after:scale-0 hover:after:scale-[6] after:top-[var(--y)] after:left-[var(--x)] after:transition-transform after:duration-[0.35s] after:ease-[cubic-bezier(0.33,1,0.68,1)] dark:after:bg-white"
+      className={`relative px-6 py-2 border-2 rounded-full box-border after:box-border dark:bg-white overflow-hidden bg-zinc-900 border-zinc-900 dark:border-white [&>span]:hover:text-zinc-900 dark:[&>span]:hover:text-white after:content-[''] after:absolute after:w-10 after:h-10 after:rounded-full after:bg-white after:scale-0 hover:after:scale-[6] after:top-[var(--y)] after:left-[var(--x)] after:transition-transform after:duration-[0.35s] after:ease-[cubic-bezier(0.33,1,0.68,1)] dark:after:bg-zinc-950 `}
+      style={{
+        transition: "transform 0.35s cubic-bezier(0.33, 1, 0.68, 1)",
+      }}
     >
-      <span className="absolute inset-0 w-full h-full bg-transparent border-2 rounded-full border-zinc-900 dark:border-white" />
-      <p className="relative z-10 font-medium transition-colors text-zinc-900 dark:text-white">
+      <span className="relative z-10 font-medium text-white transition-colors dark:text-zinc-900">
         {text}
-      </p>
+      </span>
     </button>
   )
 }
