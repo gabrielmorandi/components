@@ -26,4 +26,16 @@ export const data = {
   )
 }`,
   },
+  ButtonBlend: {
+    code: `export default function ButtonBlend({ text }) {
+  return (
+    <button className="relative inline-block px-10 py-3 overflow-hidden text-white capitalize rounded-full cursor-pointer button after:border-green-500 group after:absolute after:inset-0 after:rounded-full after:border">
+      <span className="absolute top-0 left-0 scale-0 translate-x-0 translate-y-0 bg-green-500 rounded-full button__flair" />
+      <span className="relative z-10 flex items-center justify-center gap-2 font-bold text-green-500 transition-all button_label group-hover:text-white">
+        {text}
+      </span>
+    </button>
+  )
+}`,
+  },
 }
