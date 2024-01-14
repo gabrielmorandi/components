@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import { data } from "../data/data"
 import Prism from "prismjs"
 import "prismjs/themes/prism-tomorrow.css"
-import { Copy, Check } from "lucide-react"
 import { Icon } from "./Icon"
 
 export default function ComponentSection({ children, componentName }) {
