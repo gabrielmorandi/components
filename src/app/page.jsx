@@ -4,6 +4,7 @@ import Button from "./components/Button"
 import ButtonOutline from "./components/ButtonOutline"
 import ButtonGhost from "./components/ButtonGhost"
 import ButtonBlend from "./components/ButtonBlend"
+import NavTabs from "./components/NavTabs"
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName={"ButtonBlend"}>
           <ButtonBlend text={"ButtonBlend"} />
+        </ComponentSection>
+        <ComponentSection componentName={"NavTabs"}>
+          <NavTabs tabs={["Code", "Design", "Website"]} />
         </ComponentSection>
       </main>
     </>
