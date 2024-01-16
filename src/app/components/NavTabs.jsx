@@ -20,17 +20,18 @@ export default function NavTabs({ tabs }) {
   }, [activeTab, tabsRef])
 
   return (
-    <div className="relative flex gap-2 p-1 rounded-sm bg-zinc-100">
+    <div className="relative flex gap-2 p-1 rounded-sm bg-zinc-100 dark:bg-zinc-800">
       <span
-        className="absolute z-10 transition-all bg-white rounded-sm shadow-sm bottom-1 "
+        className="absolute z-10 transition-all bg-white rounded-sm shadow-sm bottom-1 dark:bg-zinc-950"
         style={indicatorStyle}
       />
       {tabs.map((tabName, index) => (
         <button
           key={index}
           ref={(el) => (tabsRef.current[index] = el)}
-          className="z-50 flex px-3 py-2 leading-none bg-transparent rounded-sm text-md"
+          className="z-50 flex px-3 py-2 text-sm leading-none transition-colors bg-transparent rounded-sm hover:text-zinc-400 disabled:hover:text-zinc-900 dark:disabled:hover:text-white"
           onClick={() => setActiveTab(index)}
+          disabled={index === activeTab ? true : false}
         >
           {tabName}
         </button>
