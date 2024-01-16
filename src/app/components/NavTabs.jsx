@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 
 export default function NavTabs({ tabs }) {
+  // example: <NavTabs tabs={["Code", "Design", "Website"]} />
   const [activeTab, setActiveTab] = useState(0)
   const [indicatorStyle, setIndicatorStyle] = useState({})
   const tabsRef = useRef([])
