@@ -6,6 +6,7 @@ import ButtonOutline from "./components/ButtonOutline"
 import ButtonGhost from "./components/ButtonGhost"
 import ButtonBlend from "./components/ButtonBlend"
 import NavTabs from "./components/NavTabs"
+import BlogCard from "./components/CardBlog"
 
 export default function Home() {
   return (
@@ -27,6 +28,19 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName={"NavTabs"}>
           <NavTabs tabs={["Code", "Design", "Website"]} />
+        </ComponentSection>
+        <ComponentSection componentName={"CardBlog"}>
+          <BlogCard
+            imgUrl={"/blogimage.jpg"}
+            category={"Component"}
+            date={"Published 16 Jan 2024"}
+            title={"HTML&CSS foundations"}
+            description={
+              "These languages are the backbone of every website, defining structure, content, and presentation."
+            }
+            userName={"Gabriel Morandi"}
+            userImgUrl={"/userpic.png"}
+          />
         </ComponentSection>
       </main>
     </>
