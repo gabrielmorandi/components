@@ -58,12 +58,12 @@ export default function ComponentSection({ children, componentName }) {
           </button>
         </div>
         {activeTab === "preview" ? (
-          <div className="flex items-center justify-center border rounded-lg min-h-80 max-h-80 dark:border-zinc-800">
+          <div className="flex items-center justify-center p-8 border rounded-lg min-h-80 dark:border-zinc-800">
             {children}
           </div>
         ) : (
           <div className="relative flex">
-            <pre className="relative w-full overflow-auto border rounded-lg language-javascript max-h-80 min-h-80 border-zinc-200 dark:border-zinc-800 bg-zinc-950 dark:bg-zinc-900">
+            <pre className="relative w-full overflow-auto border rounded-lg language-javascript min-h-80 border-zinc-200 dark:border-zinc-800 bg-zinc-950 dark:bg-zinc-900">
               <code className="absolute w-full">{componentCode}</code>
             </pre>
             <div
