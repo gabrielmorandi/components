@@ -33,14 +33,14 @@ export default function Hero() {
                 href={"https://github.com/gabrielmorandi/components"}
                 className="relative inline-block w-max p-1 rounded-sm bg-transparent hover:text-white z-10 after:content-[''] after:absolute after:w-full after:h-1 after:bg-zinc-900 after:rounded-sm after:left-0 after:bottom-0 after:hover:h-full after:transition-all after:-z-10 focus:after:h-full transition-colors dark:after:bg-white dark:hover:text-zinc-950 dark:focus:text-zinc-950 focus:text-white outline-offset-2"
               >
-                Github repository here.
+                Github repository.
               </Link>
             </p>
             <p className="text-lg">
               Created by{" "}
               <Link
                 href={"https://github.com/gabrielmorandi/components"}
-                className="relative p-1 rounded-sm bg-transparent hover:text-white z-10 after:content-[''] after:absolute after:w-full after:h-1 after:bg-zinc-900 after:rounded-sm after:left-0 after:bottom-0 after:hover:h-full after:transition-all after:-z-10 focus:after:h-full transition-colors dark:after:bg-white dark:hover:text-zinc-950 dark:focus:text-zinc-950 focus:text-white outline-offset-2"
+                className="inline-block relative p-1 rounded-sm bg-transparent hover:text-white z-10 after:content-[''] after:absolute after:w-full after:h-1 after:bg-zinc-900 after:rounded-sm after:left-0 after:bottom-0 after:hover:h-full after:transition-all after:-z-10 focus:after:h-full transition-colors dark:after:bg-white dark:hover:text-zinc-950 dark:focus:text-zinc-950 focus:text-white outline-offset-2"
               >
                 Gabriel Morandi.
               </Link>
