@@ -7,6 +7,7 @@ import ButtonGhost from "./components/ButtonGhost"
 import ButtonBlend from "./components/ButtonBlend"
 import NavTabs from "./components/NavTabs"
 import BlogCard from "./components/CardBlog"
+import LinkHero from "./components/LinkHero"
 
 export default function Home() {
   return (
@@ -41,6 +42,9 @@ export default function Home() {
             userName={"Gabriel Morandi"}
             userImgUrl={"/userpic.png"}
           />
+        </ComponentSection>
+        <ComponentSection componentName="LinkHero">
+          <LinkHero text="Link" href={"/"} />
         </ComponentSection>
       </main>
     </>
