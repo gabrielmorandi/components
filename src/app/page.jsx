@@ -8,6 +8,7 @@ import ButtonBlend from "./components/ButtonBlend"
 import NavTabs from "./components/NavTabs"
 import BlogCard from "./components/CardBlog"
 import LinkHero from "./components/LinkHero"
+import LinkArrowUpRight from "./components/LinkArrowUpRight"
 
 export default function Home() {
   return (
@@ -45,6 +46,9 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName="LinkHero">
           <LinkHero text="Link" href={"/"} />
+        </ComponentSection>
+        <ComponentSection componentName="LinkArrowUpRight">
+          <LinkArrowUpRight text="Your Link" href={"/"} />
         </ComponentSection>
       </main>
     </>
