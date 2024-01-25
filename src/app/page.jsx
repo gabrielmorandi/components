@@ -10,6 +10,7 @@ import BlogCard from "./components/CardBlog"
 import LinkHero from "./components/LinkHero"
 import LinkArrowUpRight from "./components/LinkArrowUpRight"
 import BasicTextInput from "./components/BasicTextInput"
+import NewsletterInput from "./components/NewsletterInput"
 
 export default function Home() {
   return (
@@ -53,6 +54,9 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName="BasicTextInput">
           <BasicTextInput />
+        </ComponentSection>
+        <ComponentSection componentName="NewsletterInput">
+          <NewsletterInput />
         </ComponentSection>
       </main>
     </>
