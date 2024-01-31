@@ -1,7 +1,7 @@
 "use client"
 import { useRef, useEffect } from "react"
 
-export default function ButtonBlendOld({ text }) {
+export default function ButtonBlend({ text }) {
   const buttonRef = useRef(null)
   // This function updates the --x and --y custom properties based on mouse position
   function mouseMoveEvent(e) {
