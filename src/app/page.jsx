@@ -11,6 +11,7 @@ import LinkHero from "./components/LinkHero"
 import LinkArrowUpRight from "./components/LinkArrowUpRight"
 import BasicTextInput from "./components/BasicTextInput"
 import NewsletterInput from "./components/NewsletterInput"
+import Accordion from "./components/Accordion"
 
 export default function Home() {
   return (
@@ -57,6 +58,27 @@ export default function Home() {
         </ComponentSection>
         <ComponentSection componentName="NewsletterInput">
           <NewsletterInput />
+        </ComponentSection>
+        <ComponentSection componentName="Accordion">
+          <Accordion
+            items={[
+              {
+                title: "Item 1",
+                description:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+              {
+                title: "Item 2",
+                description:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+              {
+                title: "Item 3",
+                description:
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              },
+            ]}
+          />
         </ComponentSection>
       </main>
     </>
