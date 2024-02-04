@@ -15,7 +15,7 @@ const Accordion = ({ items }) => {
   const [openIndex, setOpenIndex] = useState(0)
 
   return (
-    <div className="divide-y divide-zinc-950 max-w-96">
+    <div className="divide-y divide-zinc-950 dark:divide-white max-w-96">
       {items.map((item, index) => (
         <div key={index}>
           <button
@@ -26,7 +26,6 @@ const Accordion = ({ items }) => {
               {item.title}
             </h2>
             <ChevronDown
-              color="#09090b"
               className={`transform transition-transform duration-300 ${
                 index === openIndex ? "rotate-180" : null
               }`}
