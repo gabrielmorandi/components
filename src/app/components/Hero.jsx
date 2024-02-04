@@ -4,7 +4,7 @@ export default function Hero() {
     <section className="flex flex-col w-11/12 place-items-center max-w-[1160px]">
       <div className="flex flex-col w-full gap-4">
         <div className="flex flex-col w-full gap-4">
-          <h2 className="text-3xl font-black tracking-tighter">Wellcome</h2>
+          <h2 className="text-3xl font-black tracking-tighter">Welcome</h2>
           <div className="flex flex-col w-full gap-1">
             <p className="text-lg">
               Enclosed, you will discover a range of components developed using
