@@ -3,7 +3,7 @@
 import React, { useState } from "react"
 import { ChevronDown } from "lucide-react"
 
-const Accordion = ({ items }) => {
+export default function Accordion({ items }) {
   // Example
   // <Accordion
   //   items={[
@@ -34,7 +34,7 @@ const Accordion = ({ items }) => {
           <div
             className={`overflow-hidden transition-all duration-300 ${
               index === openIndex ? "max-h-96" : "max-h-0"
-            } `}
+            }`}
           >
             <p
               className={`py-2 text-zinc-950 duration-300 ease-in transition-opacity ${
@@ -49,5 +49,3 @@ const Accordion = ({ items }) => {
     </div>
   )
 }
-
-export default Accordion
